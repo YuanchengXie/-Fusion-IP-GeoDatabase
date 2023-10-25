@@ -1,5 +1,5 @@
 # -Fusion-IP-GeoDatabase
-This project is a supplementary file for the paper ‘**A new database evaluation method for all IP address geolocation information**’, mainly including the files including the database, main code, and experimental data.
+This project is a supplementary file for the paper ‘**Evaluation method of IP geolocation database based on city delay characteristics**’, mainly including the files including the database, main code, and experimental data.
 
 ## Code
 
