@@ -27,25 +27,22 @@ Due to the large amount of Time Delay Distribution of City IP Address Groups dat
 
 This series of files is based on the city delay characteristic information (**including CBDR and CDC**) of 42 experimental cities obtained from the IPsame dataset. We uploaded the experimental data calculated based on the three detection nodes in London, Newark, and Weihai respectively, and carried out statistics on the urban delay characteristics based on the IPsame data of the three databases (ipsame3) and the four databases (ipsame4). During the experiment, the codes we used were all Chinese to mark the city names, so the city names were not modified in the data set.
 
-## ipsame accuracy
+## top100city1
 
-ipsame accuracy is the experimental result of our verification of the accuracy of IPsame data using the CAIDA ITDK dataset. During the evaluation, we filter out the location information of MaxMind provided in ITDK. We conclude that locating consistent IP addresses across multiple GeoIPDBs is highly reliable.
+The top100city1 file is related information about 100 international large cities, including the country, latitude and longitude, distance from the detection point and related delay information.
 
-## Latency Data Cleaning Dataset
+## accuracy File 
 
-This data set is the experimental data recorded by us in the "Cut Head and Tail" and "low frequency rejection" operations, discussing the parameters a and b of these two methods. Through this experiment, we determined the parameters a=20, b=1000.
+ipsame accuracy is the experimental result of our verification of the accuracy of IPsame data using the CAIDA ITDK dataset. During the evaluation, we filter out the location information of MaxMind provided in ITDK. We conclude that locating consistent IP addresses across multiple GeoIPDBs is highly reliable. 
+The accuracy verification results data set is the accuracy results of four databases and three models verified using ITDK.
 
-## Data Consistency Dataset
+## Evaluation results based on reference database
 
-The data consistency rate dataset is obtained by extracting IP addresses located in 42 experimental cities from multiple IP geolocation databases. We compared four commercial databases, and conducted pairwise comparisons, three database comparisons, and four database comparisons for 42 experimental cities. The final comparison results are recorded in this data set, and we extracted part of the data for analysis in the paper.
+Evaluation results based on the reference database are the evaluation results obtained by the four IP geolocation libraries after using the reference database CDCDB, including database accuracy, database recall, and database reliability scores.
 
-## Routing reachability
+## low-frequency rejection
 
-This file is the test result of the reachability of the route for the IP address and the network segment. The routable ratio of IP addresses is the ratio of the routable IPs obtained by pinging all IP addresses of a city-db to the total number of IPs contained in the city-db. Similarly, the routable ratio of a network segment is the ratio of the number of routable network segments to the total number of network segments contained in the city-db when ping detection is performed on the network segments contained in a city-db. If a network segment has an ip routable, then the network segment is routable.
-
-## Accuracy Comparision
-
-Accuracy Comparision is the experimental data obtained by comparing the city positioning information with the verification data set, including the accuracy results of multiple commercial IP geolocation databases and fusion databases in the experimental cities.
+This data set is the experimental data recorded by us in the "low-frequency rejection" operations, discussing the parameters a. Through this experiment, we determined the parameters a=1000.
 
 ## Prefix-file
 
